@@ -1,12 +1,16 @@
 import React from "react";
+
 import { FaTruck } from "react-icons/fa";
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { BsBagCheck, BsDribbble } from "react-icons/bs";
 import { CiLogin } from "react-icons/ci";
 import { CiLogout } from "react-icons/ci";
+
 import "./Nav.css";
-import ShopLogo from "./assets/Shop logo.png";
+
+import ShopLogo from "/src/assets/Shop logo.png";
+
 import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 

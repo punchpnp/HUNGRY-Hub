@@ -1,5 +1,6 @@
 import React from "react";
-import Nav from "./Nav";
+import Nav from "./components/Nav/Nav";
+// import Rout from "./components/Rout/Rout.jsx";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <BrowserRouter>
         <Nav />
+        {/* <Rout /> */}
       </BrowserRouter>
     </>
   );
