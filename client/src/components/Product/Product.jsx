@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+
 import Productdetail from "./Productdetail";
 
 import { AiOutlineShoppingCart } from "react-icons/ai";
@@ -8,6 +9,17 @@ import { AiOutlineHeart } from "react-icons/ai";
 import "./Product.css";
 
 function Product() {
+  const [product, setProduct] = useState(Productdetail);
+  const filtterproduct = (product) => {
+    const update = Productdetail.filter((x) => {
+      return x.cat === product;
+    });
+    setProduct(update);
+  };
+
+  const AllProducts = () => {
+    setProduct(Productdetail);
+  };
   return (
     <>
       <div className="products">
@@ -18,17 +30,20 @@ function Product() {
             <div className="categories">
               <h3>Categories</h3>
               <ul>
-                <li>อาหาร</li>
-                <li>ขนม</li>
-                <li>ของมือสอง</li>
-                <li>อุปกรณ์กีฬา</li>
+                <li onClick={() => AllProducts()}>All Products</li>
+                <li onClick={() => filtterproduct("อาหาร")}>อาหาร</li>
+                <li onClick={() => filtterproduct("ขนม")}>ขนม</li>
+                <li onClick={() => filtterproduct("ของมือสอง")}>ของมือสอง</li>
+                <li onClick={() => filtterproduct("อุปกรณ์กีฬา")}>
+                  อุปกรณ์กีฬา
+                </li>
               </ul>
             </div>
           </div>
 
           <div className="productbox">
             <div className="contant">
-              {Productdetail.map((curElm) => {
+              {product.map((curElm) => {
                 return (
                   <>
                     <div className="box" key={curElm.id}>
