@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { BsArrowRight } from "react-icons/bs";
-// import { FiTruck } from "react-icons/fi";
+import { FiTruck } from "react-icons/fi";
 import { FaBahtSign } from "react-icons/fa6";
 import { HiOutlineReceiptPercent } from "react-icons/hi2";
 import { BiHeadphone } from "react-icons/bi";
@@ -18,7 +18,7 @@ import Mama from "/src/assets/mama.jpg";
 import "./Home.css";
 import Homeproduct from "./Homeproduct";
 
-function Home({ detail, view, close, setClose }) {
+function Home({ detail, view, close, setClose, addtocart }) {
   // const [homeproduct, sethomeproduct] = usestate(Homeproduct);
   return (
     <>
@@ -42,7 +42,7 @@ function Home({ detail, view, close, setClose }) {
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Quidem, exercitationem?
                     </p>
-                    <h3>{curElm.Price}</h3>
+                    <h3>฿ {curElm.Price}</h3>
                     <button>Add to Cart</button>
                   </div>
                 </div>
@@ -177,7 +177,7 @@ function Home({ detail, view, close, setClose }) {
                 <div className="img_box">
                   <img src={curElm.Img} alt={curElm.Title} />
                   <div className="icon">
-                    <li>
+                    <li onClick={() => addtocart(curElm)}>
                       <AiOutlineShoppingCart />
                     </li>
                     <li onClick={() => view(curElm)}>
@@ -192,7 +192,7 @@ function Home({ detail, view, close, setClose }) {
                 <div className="detail">
                   <p>{curElm.cat}</p>
                   <h3>{curElm.Title}</h3>
-                  <h4>{curElm.Price}</h4>
+                  <h4>฿ {curElm.Price}</h4>
                 </div>
               </div>
             );
