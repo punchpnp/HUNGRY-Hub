@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { BsArrowRight } from "react-icons/bs";
-import { FiTruck } from "react-icons/fi";
+// import { FiTruck } from "react-icons/fi";
 import { FaBahtSign } from "react-icons/fa6";
 import { HiOutlineReceiptPercent } from "react-icons/hi2";
 import { BiHeadphone } from "react-icons/bi";
@@ -10,6 +10,7 @@ import { CiPercent } from "react-icons/ci";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BsEye } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
+import { IoIosCloseCircle } from "react-icons/io";
 
 import KhaiJiao from "/src/assets/Khai-jiao.jpg";
 import Mama from "/src/assets/mama.jpg";
@@ -17,10 +18,40 @@ import Mama from "/src/assets/mama.jpg";
 import "./Home.css";
 import Homeproduct from "./Homeproduct";
 
-function Home() {
+function Home({ detail, view, close, setClose }) {
   // const [homeproduct, sethomeproduct] = usestate(Homeproduct);
   return (
     <>
+      {close ? (
+        <div className="product_detail">
+          <div className="container">
+            <button className="closebtn" onClick={() => setClose(false)}>
+              <IoIosCloseCircle />
+            </button>
+            {detail.map((curElm) => {
+              return (
+                <div className="productbox">
+                  <div className="img-box">
+                    <img src={curElm.Img} alt={curElm.Title} />
+                  </div>
+
+                  <div className="detail">
+                    <h4>{curElm.cat}</h4>
+                    <h2>{curElm.Title}</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quidem, exercitationem?
+                    </p>
+                    <h3>{curElm.Price}</h3>
+                    <button>Add to Cart</button>
+                  </div>
+                </div>
+              );
+            })}
+            <div className="productbox"></div>
+          </div>
+        </div>
+      ) : null}
       {/* top_banner สำหรับโฆษณา */}
       <div className="top_banner">
         <div className="container">
@@ -149,7 +180,7 @@ function Home() {
                     <li>
                       <AiOutlineShoppingCart />
                     </li>
-                    <li>
+                    <li onClick={() => view(curElm)}>
                       <BsEye />
                     </li>
                     <li>
