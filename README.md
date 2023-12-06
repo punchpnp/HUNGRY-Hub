@@ -12,11 +12,11 @@ Ensure you have Node.js and npm installed.
 
 ### Installation
 
-\`\`\`bash
+```bash
 git clone https://github.com/punchpnp/ecommerce-1.git
 cd ecommerce-1
 npm install
-\`\`\`
+```
 
 ## Usage
 
