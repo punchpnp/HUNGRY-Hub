@@ -9,6 +9,8 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
+  // add to cart
+  const [cart, setCart] = useState([]);
   // product detail
   const [close, setClose] = useState(false);
   const [detail, setDetail] = useState([]);
@@ -37,6 +39,8 @@ function App() {
           view={view}
           close={close}
           setClose={setClose}
+          cart={cart}
+          setCart={setCart}
         />
         <Footer />
       </BrowserRouter>
