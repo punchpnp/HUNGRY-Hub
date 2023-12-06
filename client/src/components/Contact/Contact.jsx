@@ -21,7 +21,7 @@ function Contact() {
     setUser({ ...users, [name]: value });
   };
 
-  //
+  // senddata to firsbase
   const senddata = async (e) => {
     const { Name, Email, Subject, Message } = users;
     e.preventDefault();
