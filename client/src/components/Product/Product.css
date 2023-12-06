@@ -130,13 +130,13 @@
 }
 
 .products .container .productbox .contant .box:hover .detail h3 {
-  color: rgb(140, 140, 255);
+  color: #5e17eb;
 }
 
 .products .container .productbox .contant .box .detail h4 {
   margin-top: 5px;
   font-size: 14px;
-  color: rgb(140, 140, 255);
+  color: #5e17eb;
   letter-spacing: 1px;
 }
 
@@ -231,5 +231,5 @@
 }
 
 .product_detail .container .productbox .detail button:hover {
-  background: rgb(140, 140, 255);
+  background: #5e17eb;
 }
