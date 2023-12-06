@@ -11,9 +11,11 @@ import { BrowserRouter } from "react-router-dom";
 function App() {
   // add to cart
   const [cart, setCart] = useState([]);
+
   // product detail
   const [close, setClose] = useState(false);
   const [detail, setDetail] = useState([]);
+
   // filter product
   const [product, setProduct] = useState(Productdetail);
   const searchbtn = (product) => {
@@ -28,6 +30,9 @@ function App() {
     setDetail([{ ...product }]);
     setClose(true);
   };
+
+  // add to cart
+  const addtocart = (product) => {};
   return (
     <>
       <BrowserRouter>
@@ -41,6 +46,7 @@ function App() {
           setClose={setClose}
           cart={cart}
           setCart={setCart}
+          addtocart={addtocart}
         />
         <Footer />
       </BrowserRouter>

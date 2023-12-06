@@ -9,7 +9,15 @@ import { IoIosCloseCircle } from "react-icons/io";
 
 import "./Product.css";
 
-function Product({ product, setProduct, detail, view, close, setClose }) {
+function Product({
+  product,
+  setProduct,
+  detail,
+  view,
+  close,
+  setClose,
+  addtocart,
+}) {
   //
   const filtterproduct = (product) => {
     const update = Productdetail.filter((x) => {
@@ -82,12 +90,15 @@ function Product({ product, setProduct, detail, view, close, setClose }) {
                       <div className="img_box">
                         <img src={curElm.Img} alt={curElm.Title} />
                         <div className="icon">
-                          <li>
+                          {/* ตะกร้าสินค้า */}
+                          <li onClick={() => addtocart(curElm)}>
                             <AiOutlineShoppingCart />
                           </li>
+                          {/* ดูรายละเอียดสินค้า */}
                           <li onClick={() => view(curElm)}>
                             <BsEye />
                           </li>
+                          {/* รายการโปรด */}
                           <li>
                             <AiOutlineHeart />
                           </li>

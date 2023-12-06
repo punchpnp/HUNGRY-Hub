@@ -13,6 +13,7 @@ function Rout({
   setClose,
   cart,
   setCart,
+  addtocart,
 }) {
   return (
     <>
@@ -38,6 +39,7 @@ function Rout({
               view={view}
               close={close}
               setClose={setClose}
+              addtocart={addtocart}
             />
           }
         />
