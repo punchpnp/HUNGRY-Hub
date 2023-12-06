@@ -14,7 +14,7 @@ import ShopLogo from "/src/assets/Shop logo.png";
 import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
-function Nav() {
+function Nav({ searchbtn }) {
   const [search, setSearch] = useState();
   const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
   return (
@@ -40,7 +40,7 @@ function Nav() {
               autoComplete="off"
               onChange={(e) => setSearch(e.target.value)}
             />
-            <button>Search</button>
+            <button onClick={() => searchbtn(search)}>Search</button>
           </div>
 
           <div className="icon">
