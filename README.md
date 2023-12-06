@@ -1,4 +1,4 @@
-# HUNGRY-Hub 
+# HUNGRY-Hub 🍽️
 
 ## Overview
 
@@ -13,8 +13,8 @@ Ensure you have Node.js and npm installed.
 ### Installation
 
 ```bash
-git clone https://github.com/punchpnp/ecommerce-1.git
-cd ecommerce-1
+git clone https://github.com/punchpnp/HUNGRY-Hub.git
+cd HUNGRY-Hub
 npm install
 ```
 
@@ -22,15 +22,15 @@ npm install
 
 ### Development
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 ### Production Build
 
-\`\`\`bash
+```bash
 npm run build
-\`\`\`
+```
 
 ## Features
 
