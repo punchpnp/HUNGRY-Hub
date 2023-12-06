@@ -38,7 +38,6 @@ npm run build
 - Product Search
 - Product Details
 - Add to Cart
-- Responsive Design
 
 ## Technologies
 
