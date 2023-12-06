@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.cartcontainer {
+  padding: 40px 50px;
+  width: 100%;
+  background: white;
+  border-bottom: 1px sold #9a9a9a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartcontainer .emptycart {
+  margin-top: 30px;
+  /* margin-left: 40%; */
+}
+
+.cartcontainer .emptycart h2 {
+  font-size: 32px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.cartcontainer .emptycart .emptycartbtn {
+  /* margin-top: 70px; */
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  background: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
