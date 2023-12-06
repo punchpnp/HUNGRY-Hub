@@ -108,7 +108,7 @@ function Product({
                       <div className="detail">
                         <p>{curElm.cat}</p>
                         <h3>{curElm.Title}</h3>
-                        <h4>{curElm.Price}</h4>
+                        <h4>฿ {curElm.Price}</h4>
                       </div>
                     </div>
                   </>

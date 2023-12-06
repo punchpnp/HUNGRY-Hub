@@ -55,6 +55,13 @@ const Productdetail = [
     Price: "50",
     Img: "/src/assets/mama.jpg",
   },
+  {
+    id: 9,
+    Title: "ผัดมาม่า",
+    cat: "อาหาร",
+    Price: "50",
+    Img: "/src/assets/mama.jpg",
+  },
 ];
 
 export default Productdetail;
