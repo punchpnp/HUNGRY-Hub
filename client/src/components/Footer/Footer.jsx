@@ -16,7 +16,7 @@ function Footer() {
           {/* about */}
           <div className="about">
             <div className="logo">
-              <img className="w-24" src={ShopLogo} alt="shop logo" />
+              <img className="w-52" src={ShopLogo} alt="shop logo" />
             </div>
 
             <div className="detail">
@@ -33,10 +33,17 @@ function Footer() {
                   <FaLine />
                 </li>
                 <li>
-                  <FaGithub />
+                  <a href="https://github.com/punchpnp" target="_blank">
+                    <FaGithub />
+                  </a>
                 </li>
                 <li>
-                  <FaLinkedin />
+                  <a
+                    href="https://www.linkedin.com/in/nunnapat-peeranoppawat-50067b289/"
+                    target="_blank"
+                  >
+                    <FaLinkedin />
+                  </a>
                 </li>
               </div>
             </div>

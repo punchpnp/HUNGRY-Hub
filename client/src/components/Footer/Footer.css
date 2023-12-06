@@ -42,7 +42,7 @@
 }
 
 .footer .container .about .detail .icon li:hover {
-  background: rgb(140, 140, 255);
+  background: #5e17eb;
   color: white;
   border-radius: 5px;
   font-size: 16px;
@@ -72,7 +72,7 @@
 }
 
 .footer .container .accout ul li:hover {
-  color: rgb(140, 140, 255);
+  color: #5e17eb;
 }
 
 .footer .container .page {
@@ -99,5 +99,5 @@
 }
 
 .footer .container .page ul li:hover {
-  color: rgb(140, 140, 255);
+  color: #5e17eb;
 }
