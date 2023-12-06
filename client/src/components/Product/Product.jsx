@@ -52,7 +52,7 @@ function Product({
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Quidem, exercitationem?
                     </p>
-                    <h3>{curElm.Price}</h3>
+                    <h3>฿ {curElm.Price}</h3>
                     <button>Add to Cart</button>
                   </div>
                 </div>
