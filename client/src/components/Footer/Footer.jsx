@@ -21,10 +21,9 @@ function Footer() {
 
             <div className="detail">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-                necessitatibus? Sed similique accusamus non dolorem tempora?
-                Nostrum non aspernatur voluptatum autem ratione doloribus,
-                repellendus, laborum aperiam ad tenetur perspiciatis! Quod.
+                We are a dedicated team of developers passionate about creating
+                innovative and high-quality software solutions. Our goal is to
+                deliver exceptional user experiences through our projects.
               </p>
               <div className="icon">
                 <li>
