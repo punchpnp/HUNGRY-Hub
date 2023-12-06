@@ -8,6 +8,7 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { IoIosCloseCircle } from "react-icons/io";
 
 import "./Product.css";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Product({
   product,
@@ -19,6 +20,7 @@ function Product({
   addtocart,
 }) {
   //
+  const { loginWithRedirect, isAuthenticated } = useAuth0();
   const filtterproduct = (product) => {
     const update = Productdetail.filter((x) => {
       return x.cat === product;
@@ -90,10 +92,17 @@ function Product({
                       <div className="img_box">
                         <img src={curElm.Img} alt={curElm.Title} />
                         <div className="icon">
+                          {isAuthenticated ? (
+                            <li onClick={() => addtocart(curElm)}>
+                              <AiOutlineShoppingCart />
+                            </li>
+                          ) : (
+                            <li onClick={() => loginWithRedirect()}>
+                              <AiOutlineShoppingCart />
+                            </li>
+                          )}
                           {/* ตะกร้าสินค้า */}
-                          <li onClick={() => addtocart(curElm)}>
-                            <AiOutlineShoppingCart />
-                          </li>
+
                           {/* ดูรายละเอียดสินค้า */}
                           <li onClick={() => view(curElm)}>
                             <BsEye />
