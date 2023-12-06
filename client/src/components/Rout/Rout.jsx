@@ -26,6 +26,7 @@ function Rout({
               view={view}
               close={close}
               setClose={setClose}
+              addtocart={addtocart}
             />
           }
         />
