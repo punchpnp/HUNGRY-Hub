@@ -5,26 +5,6 @@
   box-sizing: border-box;
 }
 
-.free {
-  display: flex;
-  padding: 10px 30px;
-  width: 100%;
-  background-color: #1a1a1a;
-}
-
-.free .icon {
-  color: #f3b123;
-  font-size: 32px;
-}
-
-.free p {
-  margin-left: 10px;
-  color: white;
-  margin-top: 5px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
 .main_header {
   padding: 30px 40px;
   width: 100%;
@@ -36,6 +16,10 @@
   justify-content: space-between;
 }
 
+.main_header .container .logo {
+  cursor: pointer;
+}
+
 .main_header .container .search_box {
   margin-right: 30px;
 }
@@ -43,18 +27,24 @@
 .main_header .container .search_box input {
   outline: none;
   padding: 10px 30px;
-  border: 3px solid rgb(140, 140, 255);
+  border: 3px solid #5e17eb;
   width: 300px;
   color: black;
+
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .main_header .container .search_box button {
-  border: 2px solid rgb(140, 140, 255);
+  border: 2px solid #5e17eb;
   outline: none;
   padding: 11px 20px;
   cursor: pointer;
-  background: rgb(140, 140, 255);
+  background: #5e17eb;
   color: white;
+
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .main_header .container .icon {
@@ -87,15 +77,17 @@
 
 .main_header .container .icon .second_icon .link {
   margin-right: 5px;
-  font-size: 22px;
+  font-size: 30px;
   cursor: pointer;
-  color: rgb(140, 140, 255);
+  color: #5e17eb;
 }
 
 .header {
   width: 100%;
   padding: 20px 30px;
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  background-color: #5e17eb;
+  color: white;
 }
 
 .header .container {
@@ -111,20 +103,25 @@
 .header .container .nav ul li {
   margin-left: 20px;
   list-style: none;
+  color: white;
 }
 
 .header .container .nav ul li .link {
   text-decoration: none;
-  color: #1a1a1a;
+  color: white;
   transition: 0.5s;
 }
 
 .header .container .nav ul li .link:hover {
-  color: rgb(140, 140, 255);
+  color: #ffffff;
+  border: 3px solid white;
+  border-radius: 3px;
+  padding: 10px;
 }
+
 .header .container .auth {
-  margin-right: 20px;
-  font-size: 22px;
+  margin-right: 5px;
+  font-size: 20px;
   cursor: pointer;
 }
 

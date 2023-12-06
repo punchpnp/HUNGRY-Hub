@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import { FaTruck } from "react-icons/fa";
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { BsBagCheck, BsDribbble } from "react-icons/bs";
@@ -8,28 +7,24 @@ import { CiLogin } from "react-icons/ci";
 import { CiLogout } from "react-icons/ci";
 
 import "./Nav.css";
-
 import ShopLogo from "/src/assets/Shop logo.png";
 
 import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
 function Nav({ searchbtn }) {
+  // search Product
   const [search, setSearch] = useState();
+  // login
   const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
   return (
     <>
-      <div className="free">
-        <div className="icon">
-          <FaTruck />
-        </div>
-        <p>FREE Shipping when shopping up to $1000</p>
-      </div>
-
       <div className="main_header">
         <div className="container">
           <div className="logo">
-            <img className="w-24" src={ShopLogo} alt="logo" />
+            <Link to="/" className="link">
+              <img className="w-52" src={ShopLogo} alt="logo" />
+            </Link>
           </div>
 
           <div className="search_box">
@@ -64,6 +59,7 @@ function Nav({ searchbtn }) {
           </div>
         </div>
       </div>
+
       <div className="header">
         <div className="container">
           <div className="nav">
