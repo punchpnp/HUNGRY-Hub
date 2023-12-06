@@ -111,7 +111,7 @@
   background: none;
   outline: none;
   border: none;
-  color: rgb(140, 140, 255);
+  color: #5e17eb;
   font-size: 32px;
   cursor: pointer;
 }
@@ -121,7 +121,7 @@
   background: none;
   outline: none;
   border: none;
-  color: rgb(140, 140, 255);
+  color: #5e17eb;
   font-size: 32px;
   cursor: pointer;
 }
@@ -172,6 +172,6 @@
   color: white;
   border: none;
   outline: none;
-  background: rgb(140, 140, 255);
+  background: #5e17eb;
   cursor: pointer;
 }
