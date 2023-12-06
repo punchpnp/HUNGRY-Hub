@@ -28,7 +28,7 @@
   outline: none;
   padding: 10px 30px;
   border: 3px solid #5e17eb;
-  width: 300px;
+  width: 60%;
   color: black;
 
   border-top-left-radius: 20px;
@@ -36,6 +36,8 @@
 }
 
 .main_header .container .search_box button {
+  width: 30%;
+  font-size: 100%;
   border: 2px solid #5e17eb;
   outline: none;
   padding: 11px 20px;
