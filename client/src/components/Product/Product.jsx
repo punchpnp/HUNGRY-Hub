@@ -50,11 +50,8 @@ function Product({
                   <div className="detail">
                     <h4>{curElm.cat}</h4>
                     <h2>{curElm.Title}</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quidem, exercitationem?
-                    </p>
-                    <h3>฿ {curElm.Price}</h3>
+                    <p>กินนนนนนนนนนนนนนนน</p>
+                    <h3>{curElm.Price} ฿</h3>
                     <button>Add to Cart</button>
                   </div>
                 </div>
@@ -73,11 +70,16 @@ function Product({
               <h3>Categories</h3>
               <ul>
                 <li onClick={() => AllProducts()}>All Products</li>
-                <li onClick={() => filtterproduct("อาหาร")}>อาหาร</li>
-                <li onClick={() => filtterproduct("ขนม")}>ขนม</li>
-                <li onClick={() => filtterproduct("ของมือสอง")}>ของมือสอง</li>
-                <li onClick={() => filtterproduct("อุปกรณ์กีฬา")}>
-                  อุปกรณ์กีฬา
+                <li onClick={() => filtterproduct("ร้านข้าวเหนียวไก่")}>
+                  ร้านข้าวเหนียวไก่
+                </li>
+                <li onClick={() => filtterproduct("บรรทัดทอง")}>บรรทัดทอง</li>
+                <li onClick={() => filtterproduct("MBK center")}>MBK center</li>
+                <li onClick={() => filtterproduct("โรงอาหารหอใน")}>
+                  โรงอาหารหอใน
+                </li>
+                <li onClick={() => filtterproduct("ร้านอาหารตามสั่ง")}>
+                  ร้านอาหารตามสั่ง
                 </li>
               </ul>
             </div>
