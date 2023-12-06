@@ -7,13 +7,18 @@ import { FaBahtSign } from "react-icons/fa6";
 import { HiOutlineReceiptPercent } from "react-icons/hi2";
 import { BiHeadphone } from "react-icons/bi";
 import { CiPercent } from "react-icons/ci";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { BsEye } from "react-icons/bs";
+import { AiOutlineHeart } from "react-icons/ai";
 
 import KhaiJiao from "/src/assets/Khai-jiao.jpg";
 import Mama from "/src/assets/mama.jpg";
 
 import "./Home.css";
+import Homeproduct from "./Homeproduct";
 
 function Home() {
+  // const [homeproduct, sethomeproduct] = usestate(Homeproduct);
   return (
     <>
       {/* top_banner สำหรับโฆษณา */}
@@ -127,6 +132,57 @@ function Home() {
               <h3>Customer Support</h3>
               <p>Every Time call Support</p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* usestate */}
+      <div className="product">
+        <h2>Top Products</h2>
+        <div className="container">
+          {Homeproduct.map((curElm) => {
+            return (
+              <div className="box" key={curElm.id}>
+                <div className="img_box">
+                  <img src={curElm.Img} alt={curElm.Title} />
+                  <div className="icon">
+                    <li>
+                      <AiOutlineShoppingCart />
+                    </li>
+                    <li>
+                      <BsEye />
+                    </li>
+                    <li>
+                      <AiOutlineHeart />
+                    </li>
+                  </div>
+                </div>
+
+                <div className="detail">
+                  <p>{curElm.cat}</p>
+                  <h3>{curElm.Title}</h3>
+                  <h4>{curElm.Price}</h4>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* banner */}
+      <div className="banner">
+        <div className="container">
+          <div className="detail">
+            <h4>LASTEST TECHNOLOGY ADDED</h4>
+            <h3>Apple iPad 10.2 9th Gen-2021</h3>
+            <p>฿ 10000</p>
+            <Link to="/product" className="link">
+              Shop Now <BsArrowRight />
+            </Link>
+          </div>
+
+          <div className="img_box">
+            <img src={KhaiJiao} alt="khaijiao" />
           </div>
         </div>
       </div>
