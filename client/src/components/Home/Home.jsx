@@ -42,7 +42,9 @@ function Home({ detail, view, close, setClose, addtocart }) {
                       Quidem, exercitationem?
                     </p>
                     <h3>฿ {curElm.Price}</h3>
-                    <button>Add to Cart</button>
+                    <button onClick={() => addtocart(Homeproduct[0])}>
+                      Add to Cart
+                    </button>
                   </div>
                 </div>
               );
