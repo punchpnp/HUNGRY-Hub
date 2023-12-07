@@ -50,7 +50,10 @@ function Product({
                   <div className="detail">
                     <h4>{curElm.cat}</h4>
                     <h2>{curElm.Title}</h2>
-                    <p>กินนนนนนนนนนนนนนนน</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quidem, exercitationem?
+                    </p>
                     <h3>{curElm.Price} ฿</h3>
                     <button>Add to Cart</button>
                   </div>
