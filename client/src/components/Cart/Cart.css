@@ -6,14 +6,10 @@
 }
 
 .cartcontainer {
-  padding: 40px 50px;
+  padding: 4vw 5vw;
   width: 100%;
   background: whitesmoke;
-  border-bottom: 1px sold #9a9a9a;
-
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  border-bottom: 1px solid #9a9a9a;
 }
 
 .cartcontainer .center {
@@ -23,25 +19,23 @@
 }
 
 .cartcontainer .emptycart {
-  margin-top: 30px;
-  /* margin-left: 40%; */
+  margin-top: 3vw;
 }
 
 .cartcontainer .emptycart h2 {
-  font-size: 32px;
+  font-size: 3.2vw;
   color: black;
   text-transform: uppercase;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 3vw;
 }
 
 .cartcontainer .emptycart .emptycartbtn {
-  margin-top: 70px;
+  margin-top: 7vw;
   text-decoration: none;
   color: white;
-  padding: 10px 20px;
+  padding: 1vw 2vw;
   background: black;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,80 +43,71 @@
 
 .cartcontainer .contant {
   max-width: 100%;
-  padding: 20px 30px;
+  padding: 2vw 3vw;
 }
 
 .cartcontainer .contant .cart_item {
-  padding: 20px 30px;
+  padding: 2vw 3vw;
   display: flex;
   background: white;
   border-radius: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
   justify-content: space-between;
 }
 
 .cartcontainer .contant .cart_item .img_box {
-  padding: 20px 30px;
+  padding: 2vw 3vw;
   background: whitesmoke;
 }
 
 .cartcontainer .contant .cart_item .img_box img {
-  width: 250px;
-  height: 250px;
+  width: 25vw;
+  height: 25vw;
 }
 
 .cartcontainer .contant .cart_item .detail {
-  margin-left: 60px;
+  margin-left: 6vw;
   display: flex;
-  margin-top: 30px;
-  padding: 20px 30px;
+  margin-top: 3vw;
+  padding: 2vw 3vw;
 }
 
 .cartcontainer .contant .cart_item .detail .info h4 {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 1.6vw;
   color: #9a9a9a;
   font-weight: 100;
   letter-spacing: 1.5px;
 }
 
 .cartcontainer .contant .cart_item .detail .info h3 {
-  margin-top: 20px;
-  font-size: 22px;
+  margin-top: 2vw;
+  font-size: 2.2vw;
   color: black;
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 .cartcontainer .contant .cart_item .detail .info p {
-  margin-top: 10px;
+  margin-top: 1vw;
   color: black;
   letter-spacing: 1px;
 }
 
 .cartcontainer .contant .cart_item .detail .info .qty {
-  margin-top: 10px;
+  margin-top: 1vw;
   display: flex;
 }
 
-.cartcontainer .contant .cart_item .detail .info .qty .incqty {
-  padding: 10px 10px;
-  background: none;
-  outline: none;
-  border: none;
-  color: #5e17eb;
-  font-size: 32px;
-  cursor: pointer;
-}
-
+.cartcontainer .contant .cart_item .detail .info .qty .incqty,
 .cartcontainer .contant .cart_item .detail .info .qty .decqty {
-  padding: 10px 10px;
+  padding: 1vw;
   background: none;
   outline: none;
   border: none;
   color: #5e17eb;
-  font-size: 32px;
+  font-size: 3.2vw;
   cursor: pointer;
 }
 
@@ -130,45 +115,44 @@
   border: none;
   outline: none;
   background: none;
-  font-size: 22px;
+  font-size: 2.2vw;
   color: black;
-  width: 50px;
+  width: 5vw;
   text-align: center;
 }
 
 .cartcontainer .contant .cart_item .detail .info .subtotal {
   color: black;
-  font-size: 22px;
-  margin-top: 10px;
+  font-size: 2.2vw;
+  margin-top: 1vw;
 }
 
 .cartcontainer .contant .cart_item .detail .close {
-  margin-top: 30px;
-  margin-left: 50px;
+  margin-top: 3vw;
+  margin-left: 5vw;
 }
 
 .cartcontainer .contant .cart_item .detail .close button {
   border: none;
   outline: none;
-  border: none;
-  font-size: 22px;
+  font-size: 2.2vw;
   color: red;
   background: none;
   cursor: pointer;
 }
 
 .cartcontainer .totalprice {
-  margin-top: 30px;
+  margin-top: 3vw;
   margin-left: 50%;
-  font-size: 22px;
+  font-size: 2.2vw;
   text-decoration: uppercase;
   letter-spacing: 1px;
 }
 
 .cartcontainer .checkout {
-  margin-top: 40px;
+  margin-top: 4vw;
   margin-left: 50%;
-  padding: 10px 20px;
+  padding: 1vw 2vw;
   color: white;
   border: none;
   outline: none;
