@@ -125,3 +125,5 @@ function Home({ detail, view, close, setClose, addtocart }) {
 }
 
 export default Home;
+
+// review check
