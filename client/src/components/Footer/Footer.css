@@ -6,14 +6,17 @@
 }
 
 .footer {
-  padding: 30px 40px;
+  padding: 30px 20px;
   width: 100%;
   background: whitesmoke;
 }
 
 .footer .container {
-  max-width: 100%;
+  /* max-width: 100%; */
+  max-width: 1200;
   display: flex;
+
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
