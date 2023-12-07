@@ -55,7 +55,9 @@ function Product({
                       Quidem, exercitationem?
                     </p>
                     <h3>{curElm.Price} ฿</h3>
-                    <button>Add to Cart</button>
+                    <button onClick={() => addtocart(detail[0])}>
+                      Add to Cart
+                    </button>
                   </div>
                 </div>
               );
