@@ -49,10 +49,10 @@ function Nav({ searchbtn }) {
             )}
 
             <div className="second_icon">
-              <Link to="/" className="link">
+              <Link to="/" className="link" title="Favourite">
                 <AiOutlineHeart />
               </Link>
-              <Link to="/cart" className="link">
+              <Link to="/cart" className="link" title="Cart">
                 <BsBagCheck />
               </Link>
             </div>
@@ -93,11 +93,12 @@ function Nav({ searchbtn }) {
                 onClick={() =>
                   logout({ logoutParams: { returnTo: window.location.origin } })
                 }
+                title="Logout"
               >
                 <CiLogout />
               </button>
             ) : (
-              <button onClick={() => loginWithRedirect()}>
+              <button onClick={() => loginWithRedirect()} title="Login">
                 <CiLogin />
               </button>
             )}

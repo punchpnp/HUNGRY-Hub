@@ -6,7 +6,7 @@
 }
 
 .main_header {
-  padding: 30px 40px;
+  padding: 3vw 4vw;
   width: 100%;
   border-bottom: 1px solid black;
 }
@@ -14,6 +14,7 @@
 .main_header .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .main_header .container .logo {
@@ -21,32 +22,32 @@
 }
 
 .main_header .container .search_box {
-  margin-right: 30px;
+  margin-right: 3vw;
 }
 
 .main_header .container .search_box input {
   outline: none;
-  padding: 10px 30px;
-  border: 3px solid #5e17eb;
+  padding: 1vw 3vw;
+  border: 0.3vw solid #5e17eb;
   width: 60%;
   color: black;
 
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
 }
 
 .main_header .container .search_box button {
   width: 30%;
   font-size: 100%;
-  border: 2px solid #5e17eb;
+  border: 0.2vw solid #5e17eb;
   outline: none;
-  padding: 11px 20px;
+  padding: 1.1vw 2vw;
   cursor: pointer;
   background: #5e17eb;
   color: white;
 
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
 }
 
 .main_header .container .icon {
@@ -62,34 +63,33 @@
 }
 
 .main_header .container .icon .account .user_icon {
-  margin-right: 10px;
-  font-size: 22px;
+  margin-right: 1vw;
+  font-size: 2.2vw;
   color: black;
   cursor: pointer;
 }
 
 .main_header .container .icon .account p {
-  margin-right: 5px;
-  margin-top: 2px;
+  margin-right: 0.5vw;
+  margin-top: 0.2vw;
 }
 
 .main_header .container .icon .second_icon {
   display: flex;
-  margin-right: 5px;
+  margin-right: 0.5vw;
   justify-content: space-between;
 }
 
 .main_header .container .icon .second_icon .link {
-  margin-right: 5px;
-  font-size: 22px;
+  margin-right: 0.5vw;
+  font-size: 2.2vw;
   cursor: pointer;
   color: #5e17eb;
 }
 
 .header {
   width: 100%;
-  padding: 20px 30px;
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  padding: 2vw 3vw;
   background-color: #5e17eb;
   color: white;
 }
@@ -98,6 +98,7 @@
   display: flex;
   max-width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header .container .nav ul {
@@ -105,7 +106,7 @@
 }
 
 .header .container .nav ul li {
-  margin-left: 20px;
+  margin-left: 2vw;
   list-style: none;
   color: white;
 }
@@ -118,20 +119,19 @@
 
 .header .container .nav ul li .link:hover {
   color: #ffffff;
-  border: 3px solid white;
-  border-radius: 3px;
-  padding: 10px;
+  border: 0.3vw solid white;
+  border-radius: 0.3vw;
+  padding: 1vw;
 }
 
 .header .container .auth {
-  margin-right: 5px;
-  font-size: 20px;
+  margin-right: 0.5vw;
+  font-size: 2vw;
   cursor: pointer;
 }
 
 .header .container .auth button {
-  margin-right: 20px;
-  font-size: 22px;
+  margin-right: 2vw;
   cursor: pointer;
   outline: none;
   border: none;
